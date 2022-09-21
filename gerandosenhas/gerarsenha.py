@@ -27,6 +27,7 @@ while True:
             else:
                 print("\033[32mSenha salva no bloco de notas com nome de:\033[m \033[1;4;34msenha.txt\033[m")
                 arquivo = open("senha.txt", "w")
+                arquivo.write("Senha gerada: ")
                 for c in range(0, tamanho_senha):
                     arquivo.write(digitos_senha[c])
                 break
